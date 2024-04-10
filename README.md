@@ -29,15 +29,15 @@ Setup CPS Token
    ```
    Hello!
 
-Thank you for your interest in the Census Data API. Your API key is <your-api-key>. Please <a>click here to activate your key</a>.
+    Thank you for your interest in the Census Data API. Your API key is <your-api-key>. Please <a>click here to activate your key</a>.
 
-Save this email for future reference.
+    Save this email for future reference.
 
-Have Fun,
+    Have Fun,
 
-The Census Bureau API Team
+    The Census Bureau API Team
 
-Follow @uscensusbureau on twitter for API updates.
+    Follow @uscensusbureau on twitter for API updates.
    ```
 
    Please click the link in the email to activate your key.
@@ -55,22 +55,22 @@ Follow @uscensusbureau on twitter for API updates.
 
     ```
     $ poetry run python examples/example.py
-  df = df.apply(pd.to_numeric, errors="ignore")
-        a_age  marsupwt
-0          56    687.71
-1          57    687.71
-2          78    646.86
-3          65   1516.95
-4          66   1516.95
-...       ...       ...
-163538     69    514.11
-163539     70    516.25
-163540     66    516.25
-163541     55    386.37
-163542     52    386.37
+    df = df.apply(pd.to_numeric, errors="ignore")
+            a_age  marsupwt
+    0          56    687.71
+    1          57    687.71
+    2          78    646.86
+    3          65   1516.95
+    4          66   1516.95
+    ...       ...       ...
+    163538     69    514.11
+    163539     70    516.25
+    163540     66    516.25
+    163541     55    386.37
+    163542     52    386.37
 
-[163543 rows x 2 columns]
-326195439.67
+    [163543 rows x 2 columns]
+    326195439.67
     ```
 
 Run
