@@ -29,7 +29,8 @@ Setup CPS Token
    ```
    Hello!
 
-    Thank you for your interest in the Census Data API. Your API key is <your-api-key>. Please <a>click here to activate your key</a>.
+    Thank you for your interest in the Census Data API.
+    Your API key is <your-api-key>. Please <a>click here to activate your key</a>.
 
     Save this email for future reference.
 
