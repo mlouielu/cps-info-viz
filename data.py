@@ -35,12 +35,22 @@ ASEC_COLS = [
     "GTCO",  # fips county code
     "GESTFIPS",  # fips state code
     "A_AGE",  # person age
+    "A_SEX",  # person gender
+    "A_WKSTAT",  # full/part-time status
+    "WSAL_VAL",  # total wage & salary earnings (comb. ERN_VAL, i f ERN_SRCE=1, and WS_VAL)
     "DSAB_VAL",  # disability income
     "PRDTRACE",  # race
     "PEDISPHY",  # serious difficulty walking or climbing
     "PEDISDRS",  # difficluty dressing or bathing
     "PEDISOUT",  # physical, mental, or emotional condition, difficulty doing errands
     "HRSWK",  # hours per week at main job
+    "INDUSTRY",
+    "WEIND",
+    "WEMIND",
+    "OCCUP",
+    "POCCU2",
+    "WEMOCG",
+    "LJCW",
 ]
 
 
@@ -57,10 +67,10 @@ def main():
         asec.to_pickle(f"data/asec_{year}.pkl")
 
     # Download Basic CPS
-    for year in range(basic_start_year, basic_end_year + 1):
-        for month in range(1, 13):
-            basic = get_basic(year, month, BASIC_COLS)
-            basic.to_pickle(f"data/basic_{year}_{month}.pkl")
+    # for year in range(basic_start_year, basic_end_year + 1):
+    #     for month in range(1, 13):
+    #         basic = get_basic(year, month, BASIC_COLS)
+    #         basic.to_pickle(f"data/basic_{year}_{month}.pkl")
 
 
 if __name__ == "__main__":
