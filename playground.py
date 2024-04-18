@@ -64,11 +64,11 @@ def main():
             )
 
             ax.set_title(
-                f"Full-time workers' salary distribution - by gender/{label} ({yrs})"
+                f"Salary Distribution of Full Time Employees by Gender ({yrs})"
             )
-            ax.set_xlabel("Salary in thousands (USD)")
+            ax.set_xlabel("Salary in Thousands (USD)")
             ax.set_ylabel("Density")
-            ax.set_xlim(0, 220)
+            ax.set_xlim(0, 275)
             ax.legend()
 
             plt.savefig(f"figs/full_time_salary_by_gender_{label}_{yrs}.png")
