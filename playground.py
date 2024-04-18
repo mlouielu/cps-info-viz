@@ -4,7 +4,6 @@ import pathlib
 import seaborn as sns
 import numpy as np
 import matplotlib.pyplot as plt
-from pycps import get_asec, get_basic
 
 
 PICKLE_DIR = pathlib.Path("data")
@@ -50,24 +49,26 @@ def main():
             female = filtered_data[filtered_data["a_sex"] == 2]
 
             sns.kdeplot(
-                male["wsal_val"],
+                male["wsal_val"]/1000,
                 ax=ax,
                 alpha=0.5,
                 label=f"{yrs} - Male",
+                color="blue"
             )
             sns.kdeplot(
-                female["wsal_val"],
+                female["wsal_val"]/1000,
                 ax=ax,
                 alpha=0.5,
                 label=f"{yrs} - Female",
+                color="#DE5D83"
             )
 
             ax.set_title(
                 f"Full-time workers' salary distribution - by gender/{label} ({yrs})"
             )
-            ax.set_xlabel("Salary (USD)")
+            ax.set_xlabel("Salary in thousands (USD)")
             ax.set_ylabel("Density")
-            ax.set_xlim(0, 220000)
+            ax.set_xlim(0, 220)
             ax.legend()
 
             plt.savefig(f"figs/full_time_salary_by_gender_{label}_{yrs}.png")
