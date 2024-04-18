@@ -3,4 +3,7 @@
 *#
 *.pyc
 __pycache__/
-
+asec.pkl
+asec.dat
+asect.pkl.gz
+cps_*.dat.gz
