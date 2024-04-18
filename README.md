@@ -80,3 +80,23 @@ Run
 ```
 poetry run python
 ```
+
+IPUMS Setup
+-----------
+
+1. Download the `asec.pkl.gz` file and put under `ipums/` directory
+
+2. Uncompress the pickle file
+
+```
+$ gzip -d asec.pkl.gz
+```
+
+Jupyter
+-------
+
+```
+poetry run jupyter
+```
+
+For IPUMS, check `ipums_playground.ipynb`.
